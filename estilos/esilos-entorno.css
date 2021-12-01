@@ -1,0 +1,241 @@
+/* Paleta de colores */
+
+:root {
+    --color-principal: #acf39d;
+    --color-secundario: #e85f5c;
+    --color-terciario: #9cfffa;
+    --color-cuarto: #773344;
+}
+
+.container {
+    background-image: url('../imgs/path-g2f21221a4_1920.jpg');
+    background-position: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.texto-entorno {
+    background-color: white;
+    opacity: 0.7;
+    padding: 3%;
+    border-radius: 15px;
+    position: absolute;
+    top: 25%;
+}
+
+.conoce {
+    background-color: white;
+    opacity: 0.8;
+    padding: 0;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 15%;
+}
+
+.conoce {
+    background-color: white;
+    opacity: 0.7;
+    padding: 3%;
+    border-radius: 15px;
+    position: absolute;
+    display: block;
+}
+
+@media screen and (min-width: 440px) {
+
+    .container {
+        background-position: cover;
+    }
+
+    .texto-entorno {
+        right: 5%;
+        padding: 3%;
+        border-radius: 15px;
+    }
+
+    .conoce {
+        background-color: white;
+        opacity: 0.7;
+        padding: 3%;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 15%;
+        left: 10%;
+        width: 350px;
+        transition: transform 1s;
+        transform: scale(1);
+    }
+
+    .conoce:hover {
+        transform: scale(2);
+
+    }
+}
+
+/* GALERÍA DE ANIMALES */
+
+/* FOTOS */
+
+.tigre {
+    background-image: url('../imgs/tigre.jpg');
+}
+
+.tortuga {
+    background-image: url('../imgs/tortuga.jpg');
+}
+
+.mandril {
+    background-image: url('../imgs/mandril.jpg');
+}
+
+.leopardo {
+    background-image: url('../imgs/leopardo.jpg');
+}
+
+.lobo {
+    background-image: url('../imgs/lobo.jpg');
+}
+
+.jirafa {
+    background-image: url('../imgs/jirafa.jpg');
+}
+
+.aligator {
+    background-image: url('../imgs/aligator.jpg');
+}
+
+.lemur {
+    background-image: url('../imgs/lemur4.jpg');
+}
+
+.containerAnimales {
+    position: relative;
+    padding: 8% 5%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+}
+
+h1 {
+    width: 100%;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url('../imgs/fondohojas.jpg');
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+}
+
+.tarjeta-foto {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-tarjeta {
+    display: flex;
+    padding: 1rem;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-interior {
+    padding: 1rem;
+}
+
+.tarjeta-foto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.tarjeta-titulo {
+    color: var(--color-cuarto);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tarjeta-texto {
+    flex: 1 1 auto;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+.wiki {
+    font-family: verdana, arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 4px;
+    background-color: var(--color-cuarto);
+    color: white;
+    text-decoration: none;
+}
+
+.wiki:hover {
+    font-family: verdana, arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 4px;
+    background-color: white;
+    color: var(--color-cuarto);
+    text-decoration: none;
+    border: 1px solid var(--color-cuarto);
+}
+
+@media screen and (min-width: 810px) {
+
+    .galeria {
+        display: flex;
+        flex-wrap: no-wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lista-tarjeta {
+        display: flex;
+        padding: 1rem;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .galeria {
+        display: flex;
+        flex-wrap: no-wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lista-tarjeta {
+        display: flex;
+        padding: 1rem;
+        width: 25%;
+    }
+
+    
+}

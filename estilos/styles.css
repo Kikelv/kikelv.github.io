@@ -1,0 +1,311 @@
+/*
+GUÍA DE ESTILOS:
+0. RESET
+1. COLORES
+2. 
+3.
+4. MEDIA QUERIES
+
+*/
+
+/* Antes de nada hago un reset para modificar los estilos por defecto y poner los que yo quiero */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+html {
+    font-size: 0.625em;
+    scroll-behavior: smooth;
+}
+
+body {
+    /*background-color: rgb(140, 231, 117);*/
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: black;
+}
+
+.foto-portada {
+    background-image: url("/imgs/lemures.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--color-terciario);
+}
+
+a {
+    text-decoration: none;
+}
+
+:focus {
+    outline-color: var(--color-cuarto);
+    outline-offset: 1px;
+    outline-style: dotted;
+    outline-width: thin;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+/* Paleta de colores */
+
+:root {
+    --color-principal: #acf39d;
+    --color-secundario: #e85f5c;
+    --color-terciario: #9cfffa;
+    --color-cuarto: #773344;
+}
+
+/*----------------------GENERAL--------------------*/
+
+p {
+    color: black;
+}
+
+cite {
+    font-style: italic;
+}
+
+/*---------------ORDEN DE LOS ELEMENTO EN FUNCIÓN DEL TAMAÑO---------*/
+
+/* poner en la media query que corresponda */
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+/*-----------------------HEADER-------------------------*/
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(78, 161, 92, 0.76);
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoTigre {
+    max-width: 50px;
+}
+
+/*----------------------NAV-----------------------------*/
+
+/*----------------------MAIN MENU-------------------*/
+
+/* estilos para el menú de navegación */
+
+.navegador {
+    font-size: 0.9rem;
+    display: flex;
+}
+
+.navegador>li {
+    text-decoration: none;
+}
+
+.navegador>li>a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.navegador>li:first-child {
+    border-bottom: 7px solid var(--color-principal);
+}
+
+.navegador>li:nth-child(2) {
+    border-bottom: 7px solid var(--color-secundario);
+}
+
+.navegador>li:nth-child(3) {
+    border-bottom: 7px solid var(--color-terciario);
+}
+
+.navegador>li:nth-child(4) {
+    border-bottom: 7px solid var(--color-cuarto);
+}
+
+#titulo-header {
+    display: none;
+}
+
+/*-----------------------MAIN------------------------*/
+
+video {
+    margin-top: 50px;
+    width: 100vw;
+    z-index: -10;
+}
+
+/*----------------------CONTAINER------------------------*/
+
+
+.container2 {
+    text-align: center;
+    padding: 10%;
+}
+
+/*------------------------ CITAS ----------------------*/
+
+.bloqueRecomendaciones {
+    padding: 5%;
+    background-color: var(--color-principal);
+}
+
+.recomendacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5%;
+    padding: 2%;
+    box-shadow: 5px 8px 10px black;
+    font-size: 1.5rem;
+}
+
+.logoCita {
+    width: 20%;
+    float: left;
+    margin: 2%;
+}
+
+.logoCita>img {
+    width: 100%;
+}
+
+/*----------------------ARTICLES---------------------*/
+
+/*-----------------------FOOTER-------------------------*/
+
+footer {
+    background-color: var(--color-principal);
+    padding: 5%;
+    border-top: solid black;
+}
+
+/*
+
+CONTACTO (FORMULARIO)
+
+*/
+
+/*--------------------MEDIA QUERIES----------------------*/
+
+@media screen and (min-width: 440px) {
+
+    /* -------- NAVEGADOR --------*/
+    nav {
+        min-width: 50%;
+    }
+
+    .navegador>li {
+        width: 33%;
+    }
+
+    .navegador>li>a {
+        font-size: 2.5rem;
+    }
+
+    #titulo-header {
+        display: flex;
+        padding: 2%;
+        max-width: 80px;
+    }
+
+    /*-------------- MAIN -----------------*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 100vh;
+        max-width: 1900px;
+        margin: auto;
+    }
+
+    .container2 {
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        padding: 5%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 50%;
+        color: white;
+    }
+
+    .container2>h1 {
+        color: goldenrod;
+        text-shadow: 2px 2px black;
+        text-transform: uppercase;
+    }
+
+    video {
+        margin-top: 0;
+    }
+
+    /*------------- CLASE PARA OCULTAR ELEMENTOS --------*/
+
+    .ocultarPC {
+        display: none;
+    }
+
+    /*--------------- BLOQUE RECOMENDACIONES------------*/
+    .bloqueRecomendaciones {
+        width: 100%;
+        display: flex;
+        background-color: var(--color-principal);
+    }
+
+    /*------------------------ CITAS ----------------------*/
+
+    .bloqueRecomendaciones {
+        padding: 5%;
+        background-color: var(--color-principal);
+    }
+
+    .recomendacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 33%;
+        border: solid black;
+        border-radius: 5px;
+        background-color: white;
+        margin: 5%;
+        padding: 2%;
+        box-shadow: 5px 8px 10px black;
+        font-size: 1.8rem;
+    }
+
+    .logoCita {
+        width: 50%;
+        float: left;
+        margin: 2%;
+    }
+
+}
