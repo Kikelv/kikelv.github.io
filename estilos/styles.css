@@ -141,10 +141,9 @@ header {
 
 /*-----------------------MAIN------------------------*/
 
-iframe {
+video {
     margin-top: 50px;
     width: 100vw;
-    height: 50vh;
     z-index: -10;
 }
 
@@ -198,7 +197,12 @@ footer {
     border-top: solid black;
 }
 
-
+.enlaces{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /*--------------------MEDIA QUERIES----------------------*/
 
 @media screen and (min-width: 440px) {
