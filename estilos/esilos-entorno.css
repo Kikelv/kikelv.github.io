@@ -95,18 +95,18 @@
 }
 
 .lobo {
-    background-image: url('../imgs/lobo.jpg');
+    background-image: url('https://images.pexels.com/photos/5745316/pexels-photo-5745316.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 }
 
 .jirafa {
-    background-image: url('../imgs/jirafa.jpg');
+    background-image: url('https://images.pexels.com/photos/3839115/pexels-photo-3839115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 }
 
 .lemur {
-    background-image: url('../imgs/lemur1.jpg');
+    background-image: url('https://images.pexels.com/photos/7722717/pexels-photo-7722717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
 }
 .koala {
-    background-image: url('../imgs/koala1.jpg');
+    background-image: url('https://images.pexels.com/photos/5403400/pexels-photo-5403400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
 }
 
 .containerAnimales {
