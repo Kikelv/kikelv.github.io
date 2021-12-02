@@ -141,9 +141,10 @@ header {
 
 /*-----------------------MAIN------------------------*/
 
-video {
+iframe {
     margin-top: 50px;
     width: 100vw;
+    height: 50vh;
     z-index: -10;
 }
 
