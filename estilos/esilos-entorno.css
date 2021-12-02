@@ -79,19 +79,19 @@
 /* FOTOS */
 /* de esta forma homogeneizo las fotos al usarlas de fondo en lugar de poner imágenes */
 .tigre {
-    background-image: url('../imgs/tigre.jpg');
+    background-image: url('https://images.pexels.com/photos/572861/pexels-photo-572861.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 }
 
 .tortuga {
-    background-image: url('../imgs/tortuga.jpg');
+    background-image: url('https://images.pexels.com/photos/5560910/pexels-photo-5560910.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 }
 
 .mandril {
-    background-image: url('../imgs/mandril.jpg');
+    background-image: url('https://images.pexels.com/photos/146512/pexels-photo-146512.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 }
 
 .leopardo {
-    background-image: url('../imgs/leopardo.jpg');
+    background-image: url('https://images.pexels.com/photos/46254/leopard-wildcat-big-cat-botswana-46254.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 }
 
 .lobo {
