@@ -102,12 +102,11 @@
     background-image: url('../imgs/jirafa.jpg');
 }
 
-.aligator {
-    background-image: url('../imgs/aligator.jpg');
-}
-
 .lemur {
-    background-image: url('../imgs/lemur4.jpg');
+    background-image: url('../imgs/lemur1.jpg');
+}
+.koala {
+    background-image: url('../imgs/koala1.jpg');
 }
 
 .containerAnimales {
