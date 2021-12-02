@@ -1,16 +1,19 @@
 .containerBlog {
     padding: 5% 5%;
 }
-h1{
+
+h1 {
     width: 100%;
     font-size: 8rem;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: url('../imgs/fondohojas.jpg');
     background-size: contain;
+    /* Para que todos los navegadores acepten que el fondo del texto sea una imagen */
     -webkit-background-clip: text;
     color: rgba(0, 0, 0, 0);
 }
+
 article {
     margin: 12% 1%;
     padding-bottom: 2%;
@@ -21,25 +24,30 @@ article>img {
     width: 100%;
     border: 2px solid black;
 }
+
 article>p {
     margin-bottom: 5%;
 }
 
-article >a{
+article>a {
     padding: 1%;
     border: 1px solid var(--color-principal);
     margin: 2%;
 }
-article >a:hover{
+
+article>a:hover {
     background-color: var(--color-principal);
 }
+
 .fotoAnimal {
     width: 100%;
 }
-.nombre{
+
+.nombre {
     text-transform: capitalize;
     text-decoration-line: underline;
 }
+
 .galeriaFotos {
     display: grid;
     grid-template-columns: 1fr;
@@ -47,9 +55,7 @@ article >a:hover{
     grid-gap: 1rem;
 }
 
-
-
-.encabezado{
+.encabezado {
     margin: 14% 5% 0 5%;
     width: 100%;
     border-bottom: 1px solid var(--color-principal);
@@ -69,13 +75,14 @@ article >a:hover{
         margin: 2%;
         width: 45%;
     }
-    article >p{
+
+    article>p {
         padding: 2%;
     }
-    
+
 
     .galeriaFotos {
         width: 45%;
-        
+
     }
 }
