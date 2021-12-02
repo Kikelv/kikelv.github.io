@@ -2,9 +2,14 @@
 GUÍA DE ESTILOS:
 0. RESET
 1. COLORES
-2. 
-3.
-4. MEDIA QUERIES
+2. GENERAL
+3. HEADER
+4. NAV
+5. MAIN
+6. CONTAINER
+7. CITAS
+8. FOOTER
+9. MEDIA QUERIES
 
 */
 
@@ -68,22 +73,6 @@ p {
 
 cite {
     font-style: italic;
-}
-
-/*---------------ORDEN DE LOS ELEMENTO EN FUNCIÓN DEL TAMAÑO---------*/
-
-/* poner en la media query que corresponda */
-
-.order-1 {
-    order: 1;
-}
-
-.order-2 {
-    order: 2;
-}
-
-.order-3 {
-    order: 3;
 }
 
 /*-----------------------HEADER-------------------------*/
@@ -196,7 +185,6 @@ video {
     width: 100%;
 }
 
-/*----------------------ARTICLES---------------------*/
 
 /*-----------------------FOOTER-------------------------*/
 
@@ -206,11 +194,6 @@ footer {
     border-top: solid black;
 }
 
-/*
-
-CONTACTO (FORMULARIO)
-
-*/
 
 /*--------------------MEDIA QUERIES----------------------*/
 
